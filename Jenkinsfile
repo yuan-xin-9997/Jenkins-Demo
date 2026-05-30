@@ -38,7 +38,7 @@ pipeline {
 				echo '🚚 正在从 Git 仓库拉取 Java 源代码...'
 				// 替换为你的真实 Git 仓地址和分支
 				// git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
-				sh 'rm -rf /var/jenkins_home/workspace/github-pipeline-demo/*'
+				sh 'rm -rf /var/jenkins_home/workspace/jenkinsfile-demo/*'
 				sh 'git clone git@github.com:yuan-xin-9997/Jenkins-Demo.git'
 				// 本地测试暂用模拟提示
 				sh 'echo "Code checkout completed."'
